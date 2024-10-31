@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Captura tu nombre"
+        android:textColor="@color/miAzul"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnPulsar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_saludar"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_limpiar"
+        app:layout_constraintTop_toBottomOf="@+id/btnPulsar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_cerrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnLimpiar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
